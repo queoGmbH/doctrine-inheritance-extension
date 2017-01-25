@@ -1,6 +1,7 @@
 {
   "name": "bitecodes/doctrine-inheritance-extension",
   "description": "This extension will allow you to define the discriminator mapping from the child entity",
+  "license": "MIT",
   "require": {
     "doctrine/orm": "^2.3"
   },
