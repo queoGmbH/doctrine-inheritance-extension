@@ -9,25 +9,23 @@ use Doctrine\ORM\Mapping\DiscriminatorMap;
 class DiscriminatorMappingListener
 {
     /**
-     * @var array
+     * Check if mapping has been initialized
+     *
+     * @var bool
      */
-    private $mapping;
+    private $initialized = false;
 
     /**
-     * @var AnnotationReader
+     * @var array
      */
-    private $reader;
-
-    public function __construct()
-    {
-        $this->reader = new AnnotationReader();
-    }
+    private $mapping = [];
 
     public function loadClassMetadata(LoadClassMetadataEventArgs $args)
     {
-        if (!$this->mapping) {
+        if (!$this->initialized) {
             $classes = $args->getEntityManager()->getConfiguration()->getMetadataDriverImpl()->getAllClassNames();
             $this->mapping = ChildEntityReader::getMapping($classes);
+            $this->initialized = true;
         }
 
         $metadata = $args->getClassMetadata();
@@ -37,10 +35,7 @@ class DiscriminatorMappingListener
             $class = new \ReflectionClass($metadata->getName());
         }
 
-        /** @var DiscriminatorMap $discMapAnnotation */
-        if (isset($this->mapping[$class->getName()]) && $discMapAnnotation = $this->reader->getClassAnnotation($class,
-                DiscriminatorMap::class)
-        ) {
+        if (isset($this->mapping[$class->getName()])) {
             $metadata->setDiscriminatorMap($this->mapping[$class->getName()]);
         }
     }
