@@ -1,6 +1,6 @@
 <?php
 
-namespace BiteCodes\DoctrineInheritanceExtension\Tests\TestEntity;
+namespace Queo\DoctrineInheritanceExtension\Tests\TestEntity;
 
 use Doctrine\ORM\Mapping as ORM;
 

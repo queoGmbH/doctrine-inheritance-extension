@@ -1,6 +1,6 @@
 <?php
 
-namespace BiteCodes\DoctrineInheritanceExtension;
+namespace Queo\DoctrineInheritanceExtension;
 
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;

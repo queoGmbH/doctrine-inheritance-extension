@@ -1,6 +1,6 @@
 <?php
 
-namespace BiteCodes\DoctrineInheritanceExtension\Annotation;
+namespace Queo\DoctrineInheritanceExtension\Annotation;
 
 use Doctrine\Common\Annotations\Annotation\Target;
 

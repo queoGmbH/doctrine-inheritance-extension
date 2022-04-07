@@ -1,8 +1,8 @@
 <?php
 
-namespace BiteCodes\DoctrineInheritanceExtension;
+namespace Queo\DoctrineInheritanceExtension;
 
-use BiteCodes\DoctrineInheritanceExtension\Annotation\ChildEntity;
+use Queo\DoctrineInheritanceExtension\Annotation\ChildEntity;
 use Doctrine\Common\Annotations\AnnotationReader;
 
 class ChildEntityReader

@@ -1,11 +1,11 @@
 <?php
 
-namespace BiteCodes\DoctrineInheritanceExtension\Tests;
+namespace Queo\DoctrineInheritanceExtension\Tests;
 
-use BiteCodes\DoctrineInheritanceExtension\Tests\TestEntity\AuthorCategory;
-use BiteCodes\DoctrineInheritanceExtension\Tests\TestEntity\BaseCategory;
-use BiteCodes\DoctrineInheritanceExtension\Tests\TestEntity\PostCategory;
-use BiteCodes\DoctrineInheritanceExtension\Tests\TestHelper\TestCase;
+use Queo\DoctrineInheritanceExtension\Tests\TestEntity\AuthorCategory;
+use Queo\DoctrineInheritanceExtension\Tests\TestEntity\BaseCategory;
+use Queo\DoctrineInheritanceExtension\Tests\TestEntity\PostCategory;
+use Queo\DoctrineInheritanceExtension\Tests\TestHelper\TestCase;
 
 class DiscriminatorMappingListenerTest extends TestCase
 {
