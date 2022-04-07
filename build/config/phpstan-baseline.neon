@@ -1,0 +1,127 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\ChildEntityReader\\:\\:getMapping\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: ../../src/ChildEntityReader.php
+
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\ChildEntityReader\\:\\:getMapping\\(\\) has parameter \\$classes with no type specified\\.$#"
+			count: 1
+			path: ../../src/ChildEntityReader.php
+
+		-
+			message: "#^Cannot call method getAllClassNames\\(\\) on Doctrine\\\\Persistence\\\\Mapping\\\\Driver\\\\MappingDriver\\|null\\.$#"
+			count: 1
+			path: ../../src/DiscriminatorMappingListener.php
+
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\DiscriminatorMappingListener\\:\\:loadClassMetadata\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: ../../src/DiscriminatorMappingListener.php
+
+		-
+			message: "#^Property Queo\\\\DoctrineInheritanceExtension\\\\DiscriminatorMappingListener\\:\\:\\$mapping type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: ../../src/DiscriminatorMappingListener.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between ReflectionClass\\<object\\> and null will always evaluate to false\\.$#"
+			count: 1
+			path: ../../src/DiscriminatorMappingListener.php
+
+		-
+			message: "#^Cannot call method getAllClassNames\\(\\) on Doctrine\\\\Persistence\\\\Mapping\\\\Driver\\\\MappingDriver\\|null\\.$#"
+			count: 1
+			path: ../../tests/ChildEntityReaderTest.php
+
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\ChildEntityReaderTest\\:\\:it_returns_a_mapping_of_all_parents_with_their_child_entities\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: ../../tests/ChildEntityReaderTest.php
+
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\DiscriminatorMappingListenerTest\\:\\:it_adds_child_entity_to_the_discriminator_mapping\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: ../../tests/DiscriminatorMappingListenerTest.php
+
+		-
+			message: "#^Property Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\TestEntity\\\\BaseCategory\\:\\:\\$id has no type specified\\.$#"
+			count: 1
+			path: ../../tests/TestEntity/BaseCategory.php
+
+		-
+			message: "#^Property Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\TestEntity\\\\BaseCategory\\:\\:\\$name has no type specified\\.$#"
+			count: 1
+			path: ../../tests/TestEntity/BaseCategory.php
+
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\TestHelper\\\\TestCase\\:\\:getDatabaseCount\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: ../../tests/TestHelper/TestCase.php
+
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\TestHelper\\\\TestCase\\:\\:getDatabaseCount\\(\\) has parameter \\$criteria with no type specified\\.$#"
+			count: 1
+			path: ../../tests/TestHelper/TestCase.php
+
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\TestHelper\\\\TestCase\\:\\:getDatabaseCount\\(\\) has parameter \\$entity with no type specified\\.$#"
+			count: 1
+			path: ../../tests/TestHelper/TestCase.php
+
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\TestHelper\\\\TestCase\\:\\:seeInDatabase\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: ../../tests/TestHelper/TestCase.php
+
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\TestHelper\\\\TestCase\\:\\:seeInDatabase\\(\\) has parameter \\$criteria with no type specified\\.$#"
+			count: 1
+			path: ../../tests/TestHelper/TestCase.php
+
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\TestHelper\\\\TestCase\\:\\:seeInDatabase\\(\\) has parameter \\$entity with no type specified\\.$#"
+			count: 1
+			path: ../../tests/TestHelper/TestCase.php
+
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\TestHelper\\\\TestCase\\:\\:seeNotInDatabase\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: ../../tests/TestHelper/TestCase.php
+
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\TestHelper\\\\TestCase\\:\\:seeNotInDatabase\\(\\) has parameter \\$criteria with no type specified\\.$#"
+			count: 1
+			path: ../../tests/TestHelper/TestCase.php
+
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\TestHelper\\\\TestCase\\:\\:seeNotInDatabase\\(\\) has parameter \\$entity with no type specified\\.$#"
+			count: 1
+			path: ../../tests/TestHelper/TestCase.php
+
+		-
+			message: "#^Cannot call method getAllClassNames\\(\\) on Doctrine\\\\Persistence\\\\Mapping\\\\Driver\\\\MappingDriver\\|null\\.$#"
+			count: 1
+			path: ../../tests/TestHelper/TestDb.php
+
+		-
+			message: "#^Class Queo\\\\DoctrineInheritanceExtension\\\\DiscriminatorMappingListener does not have a constructor and must be instantiated without any parameters\\.$#"
+			count: 1
+			path: ../../tests/TestHelper/TestDb.php
+
+		-
+			message: "#^Method Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\TestHelper\\\\TestDb\\:\\:createSchema\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: ../../tests/TestHelper/TestDb.php
+
+		-
+			message: "#^Property Queo\\\\DoctrineInheritanceExtension\\\\Tests\\\\TestHelper\\\\TestDb\\:\\:\\$connectionOptions type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: ../../tests/TestHelper/TestDb.php
+
+		-
+			message: "#^Parameter \\#1 \\$callable of static method Doctrine\\\\Common\\\\Annotations\\\\AnnotationRegistry\\:\\:registerLoader\\(\\) expects callable\\(\\)\\: mixed, array\\{mixed, 'loadClass'\\} given\\.$#"
+			count: 1
+			path: ../../tests/bootstrap.php
+

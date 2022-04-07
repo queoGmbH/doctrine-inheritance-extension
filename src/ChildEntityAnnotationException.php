@@ -1,6 +1,6 @@
 <?php
 
-namespace BiteCodes\DoctrineInheritanceExtension;
+namespace Queo\DoctrineInheritanceExtension;
 
 class ChildEntityAnnotationException extends \Exception
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace BiteCodes\DoctrineInheritanceExtension\Tests\TestHelper;
+namespace Queo\DoctrineInheritanceExtension\Tests\TestHelper;
 
 use Doctrine\ORM\EntityManager;
 
-abstract class TestCase extends \PHPUnit_Framework_TestCase
+abstract class TestCase extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var TestDb
@@ -16,7 +16,7 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase
      */
     protected $em;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -25,7 +25,7 @@ abstract class TestCase extends \PHPUnit_Framework_TestCase
         $this->testDb = new TestDb(
             $here . '/../TestEntity',
             $here . '/../TestProxy',
-            'BiteCodes\DoctrineInheritanceExtension\Tests\TestEntity'
+            'Queo\DoctrineInheritanceExtension\Tests\TestEntity'
         );
 
         $this->em = $this->testDb->createEntityManager();

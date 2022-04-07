@@ -1,11 +1,11 @@
 <?php
 
-namespace BiteCodes\DoctrineInheritanceExtension\Tests;
+namespace Queo\DoctrineInheritanceExtension\Tests;
 
-use BiteCodes\DoctrineInheritanceExtension\ChildEntityReader;
-use BiteCodes\DoctrineInheritanceExtension\Tests\TestEntity\BaseCategory;
-use BiteCodes\DoctrineInheritanceExtension\Tests\TestEntity\PostCategory;
-use BiteCodes\DoctrineInheritanceExtension\Tests\TestHelper\TestCase;
+use Queo\DoctrineInheritanceExtension\ChildEntityReader;
+use Queo\DoctrineInheritanceExtension\Tests\TestEntity\BaseCategory;
+use Queo\DoctrineInheritanceExtension\Tests\TestEntity\PostCategory;
+use Queo\DoctrineInheritanceExtension\Tests\TestHelper\TestCase;
 
 class ChildEntityReaderTest extends TestCase
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace BiteCodes\DoctrineInheritanceExtension\Tests\TestHelper;
+namespace Queo\DoctrineInheritanceExtension\Tests\TestHelper;
 
-use BiteCodes\DoctrineInheritanceExtension\ChildEntityReader;
-use BiteCodes\DoctrineInheritanceExtension\DiscriminatorMappingListener;
+use Queo\DoctrineInheritanceExtension\ChildEntityReader;
+use Queo\DoctrineInheritanceExtension\DiscriminatorMappingListener;
 use Doctrine\Common\EventManager;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Events;
 use Doctrine\ORM\Tools\SchemaTool;
-use Doctrine\Common\Cache\ArrayCache;
 use Doctrine\ORM\Configuration;
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 class TestDb
 {
@@ -35,11 +35,11 @@ class TestDb
      */
     public function __construct($annotationPath, $proxyDir, $proxyNamespace)
     {
-        $cache = new ArrayCache();
+        $cache = new FilesystemAdapter();
 
         $config = new Configuration();
-        $config->setMetadataCacheImpl($cache);
-        $config->setQueryCacheImpl($cache);
+        $config->setMetadataCache($cache);
+        $config->setQueryCache($cache);
         $config->setMetadataDriverImpl(
             $config->newDefaultAnnotationDriver([$annotationPath], false)
         );
