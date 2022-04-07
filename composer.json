@@ -31,7 +31,7 @@
   "scripts": {
     "phpunit": "phpunit -c build/config/phpunit.xml",
     "phpstan": "phpstan analyse -c build/config/phpstan.neon",
-    "infection": "infection --only-covered --configuration=build/config/infection.json --min-msi=79 --min-covered-msi=79 --coverage=../coverage --threads=4 --test-framework-options='--no-coverage'"
+    "infection": "infection --only-covered --configuration=build/config/infection.json --min-msi=40 --min-covered-msi=40 --coverage=../coverage --threads=4 --test-framework-options='--no-coverage'"
   },
   "config": {
     "allow-plugins": {
